@@ -1,2 +1,2 @@
 # Guessing-Game
-This is my game!
+This is my crappy game!
