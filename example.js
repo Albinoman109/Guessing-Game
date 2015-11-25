@@ -2,9 +2,13 @@ var num = Math.floor(Math.random() * 50);
 var easterEgg = 42;
 var myAge = 21;
 var hitchHiker = "towel";
+
+//This is all the code for my game. I put it in a function
+function startTheGame() {
 var guessNum = prompt("Guess a number");
 var guessAge = prompt("Please guess my age!");
 var awesome = prompt("Is this game awesome? yes or no");
+
 
 if (guessAge == myAge) {
 	alert("Your right! I am 21!");
@@ -54,3 +58,9 @@ if (awesome === "yes" || awesome === "Yes") {
 console.log("They thought I was" + " " + guessAge);
 console.log("Their guess was" + " " + guessNum);
 console.log("Do they think my game is awesome?" + " " + awesome);
+document.getElementById('answer1').innerHTML = "You guessed the number" + " " + guessNum;
+document.getElementById('answer2').innerHTML = "You thought I was" + " " + guessAge;
+document.getElementById('answer3').innerHTML = "Did you think this game was awesome?" + " " + awesome;
+
+};
+
