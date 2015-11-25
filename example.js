@@ -2,12 +2,13 @@ var num = Math.floor(Math.random() * 50);
 var easterEgg = 42;
 var myAge = 21;
 var hitchHiker = "towel";
+var questons = ["Please guess a number!", "Please guess my age!", "Is this game awesome? Yes or No"];
 
 //This is all the code for my game. I put it in a function
 function startTheGame() {
-var guessNum = prompt("Guess a number");
-var guessAge = prompt("Please guess my age!");
-var awesome = prompt("Is this game awesome? yes or no");
+var guessNum = prompt(questons[0]);
+var guessAge = prompt(questons[1]);
+var awesome = prompt(questons[2]);
 
 
 if (guessAge == myAge) {
